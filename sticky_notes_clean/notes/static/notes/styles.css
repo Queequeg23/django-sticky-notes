@@ -1,0 +1,38 @@
+/* --- Changes on top of Bootstrap --- */
+
+body {
+    background-color: #f8fafc;  /* light grey background */
+}
+
+/* Ensure long note content keeps line breaks */
+.card-text,
+.note-body {
+    white-space: pre-line;
+}
+
+/* Spacing under main headings */
+h2 {
+    margin-bottom: 0.75rem;
+}
+
+/* Center the main card pages */
+.container {
+    max-width: 900px;
+}
+
+/* --- Django auth login form: make fields look like Bootstrap formatted --- */
+/* This targets the default Django login form at /accounts/login/ */
+
+form[action$="/login/"] input[type="text"],
+form[action$="/login/"] input[type="password"] {
+    width: 100%;
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+}
